@@ -72,8 +72,7 @@
         <div class="align-center container">
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-8">
-                    <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>dark stories, dark
-                            internet</strong></h1>
+                    <h1 id="quote" class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong></strong></h1>
 
                     <p class="mbr-text mbr-fonts-style display-7">the internet is full of dark stories. the only thing
                         that's needed is a good storyteller.</p>
@@ -188,7 +187,10 @@
     <script src="assets/dropdown/js/navbar-dropdown.js"></script>
     <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
     <script src="assets/theme/js/script.js"></script>
-
+    <script>
+        var randomquotes = ["the story in the darkness", "dark stories, dark internet", "fabulas are stories", "the story lies in the darkness", "dark is back", "the story is waiting"]
+        document.getElementById("quote").innerHTML = randomquotes[Math.floor(Math.random()*randomquotes.length)]
+    </script>
 
 </body>
 
